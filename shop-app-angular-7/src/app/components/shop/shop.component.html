@@ -1,0 +1,8 @@
+<div class="card shop">
+  <h5 class="card-title">{{shop.name}}</h5>
+  <img class="card-img-top" src="{{shop.poster}}" alt="Card image cap" style="width: 100%">
+  <div class="card-body">
+    <button (click)="removeLikedShop()" class="btn btn-danger" *ngIf="shop.isLiked">Remove</button>
+    <button (click)="likeShop()" class="btn btn-primary" *ngIf="!shop.isLiked">Like</button>
+  </div>
+</div>
